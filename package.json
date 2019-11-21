@@ -5,6 +5,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "develop-preview": "cross-env ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop",
     "test": "jest",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
@@ -37,7 +38,8 @@
     "eslint-config-google": "^0.10.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-react": "^7.11.1",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "cross-env": "^6.0.3"
   },
   "jest": {
     "testEnvironment": "node",
